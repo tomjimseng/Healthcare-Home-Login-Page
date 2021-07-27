@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5309d88ab9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="hospitalstaff.css">
+    <script src="hospitalstaff.js"></script>
+    <title>Staff Login</title>
+</head>
+<body>
+    <form onsubmit="validateStaff()" name="staffLogin">
+        <h1>Staff Login</h1>
+        <div class="login-box">
+            <i class="fas fa-users"></i>
+            <label for="inputUsername">Username</label>
+            <input type="username" name="username" class="form-user" id="inputUsername" placeholder="Username">
+        
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <label for="inputPassword">Password</label>
+            <input type="password" name="password" class="form-user" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label class="form-check-label"><input type="checkbox">Remember Me</label>
+        </div>
+        <button type="submit" class="btn btn-primary" id="btn">Sign In</button>
+    </div>
+</form>
+</body>
+</html>

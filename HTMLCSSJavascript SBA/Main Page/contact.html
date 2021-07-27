@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5309d88ab9.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family:'Courier New', Courier, monospace;
+            background: url(contactpage.jpg);
+            background-size: cover;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+            width: 124%;
+            margin-top: 40px;
+            border: 0;
+        }
+
+        .container {
+            width: 400px;
+            height: 10px;
+            margin: 40px auto;
+        }
+
+        .contact-form {
+            max-width: 800px;
+            margin: auto;
+            padding: 0 40px;
+        }
+
+        .form-user {
+            display:block;
+            width: 100%;
+            padding: 10px 40px;
+            border: 0;
+            outline: none;
+        }
+
+        .icon-name {
+            margin-top: 20px;
+        }
+
+        .icon-email {
+            margin-top: 20px;
+        }
+
+        .icon-phone {
+            margin-top: 20px;
+        }
+
+        .description {
+            margin-top: 20px;
+        }
+
+        #contact-description {
+            margin-top: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form class="contact-form">
+            <div class="icon-name">
+            <i class="fas fa-user-circle" id="icon"></i>
+            <label for="inputUser">Full Name</label>
+            <input type="name" class="form-user" id="inputName" placeholder="Enter your Full Name">
+            </div>
+            <div class="icon-email">
+            <i class="fas fa-lock" id="icon"></i>
+            <label for="inputUser">Email</label>
+            <input type="email" class="form-user" id="inputEmail" placeholder="Please provide an Email">
+            </div>
+            <div class="icon-phone">
+            <i class="fas fa-lock" id="icon"></i>
+            <label for="inputUser">Phone Number</label>
+            <input type="phone" class="form-user" id="inputPhone" placeholder="Please provide a phone number">
+            </div>
+            <div class="description">
+                <label for="inputDescription">Reason for contacting us:</label>
+                <select name="reason" id="contact-description" style="padding: 6px 25px; border-radius: 20px; border: 0; cursor: pointer;">
+                    <option value= "none" selected disabled hidden> </option>
+                    <option value="schedule an appointment">Schedule an appointment</option>
+                    <option value="technical Support">Technical Support</option>
+                    <option value="inquiries">Inquiries</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <textarea type="text" class="contact-text" id="inputMessage" placeholder="Enter Your Message"></textarea>
+                <button type="submit" class="btn btn-primary" style="padding: 6px 25px; border-radius: 20px; border: 0; cursor: pointer;">Send</button>
+        </form>
+    </div>
+</body>
+</html>
